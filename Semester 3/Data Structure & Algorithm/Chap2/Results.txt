@@ -1,6 +1,0 @@
-Adam 60 20 
-Brady 47 18 
-Cindy 55 22 
-Diddy 41 22 
-Ena 10 50 
-Finn 31 24 
