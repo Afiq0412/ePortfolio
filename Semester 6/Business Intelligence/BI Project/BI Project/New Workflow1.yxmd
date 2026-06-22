@@ -1,0 +1,573 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="65" y="0" width="709" height="213" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Amazon Sale</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Amazon Sale</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="90" y="97" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Amazon Sale Report.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="index" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Order ID" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Status" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Fulfilment" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Sales Channel" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="ship-service-level" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Style" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="SKU" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Category" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Size" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="ASIN" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Courier Status" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Qty" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="currency" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Amount" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="ship-city" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="ship-state" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="ship-postal-code" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="ship-country" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="promotion-ids" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="B2B" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="fulfilled-by" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+                <Field name="Unnamed: 22" size="254" source="File: C:\Users\User\Downloads\BI Project\Amazon Sale Report.csv\Amazon Sale Report.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="162" y="49" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\User\AppData\Local\Temp\Alteryx\Engine_9952_5475dd4a49674cbfa51a3e8619057fa5_\Engine_9952_f5a4b624f16c4658adc186783075cb7d~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="378" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Order ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="594" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="index" selected="True" />
+                <SelectField field="Order ID" selected="True" />
+                <SelectField field="New_Date" selected="True" />
+                <SelectField field="Date" selected="False" />
+                <SelectField field="Status" selected="True" />
+                <SelectField field="Fulfilment" selected="True" />
+                <SelectField field="Sales Channel" selected="True" />
+                <SelectField field="ship-service-level" selected="True" rename="Ship_Service_Level" />
+                <SelectField field="Style" selected="True" />
+                <SelectField field="SKU" selected="True" />
+                <SelectField field="Category" selected="True" />
+                <SelectField field="Size" selected="True" />
+                <SelectField field="ASIN" selected="True" />
+                <SelectField field="Courier Status" selected="True" />
+                <SelectField field="Qty" selected="True" type="Int16" size="2" />
+                <SelectField field="currency" selected="True" />
+                <SelectField field="Amount" selected="True" type="Double" size="8" />
+                <SelectField field="ship-city" selected="True" rename="Ship_City" />
+                <SelectField field="ship-state" selected="True" rename="Ship_State" />
+                <SelectField field="ship-postal-code" selected="True" rename="Ship_Postal_Code" />
+                <SelectField field="ship-country" selected="True" rename="Ship_Country" />
+                <SelectField field="promotion-ids" selected="False" rename="Promotion_ids" />
+                <SelectField field="B2B" selected="False" />
+                <SelectField field="fulfilled-by" selected="False" />
+                <SelectField field="Unnamed: 22" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="498" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Date</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>New_Date</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Date From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="246" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([Amount]) AND !IsNull([Order ID])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([Amount]) AND !IsNull([Order ID])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="690" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\User\AppData\Local\Temp\Alteryx\Engine_9952_5475dd4a49674cbfa51a3e8619057fa5_\Engine_9952_4f08cb8d96714c2984155a275b5094e3~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="64" y="245" width="560" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Sale Report</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sale Report</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="89" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\User\Downloads\BI Project\Sale Report.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Sale Report.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="index" size="254" source="File: C:\Users\User\Downloads\BI Project\Sale Report.csv" type="V_String" />
+                <Field name="SKU Code" size="254" source="File: C:\Users\User\Downloads\BI Project\Sale Report.csv" type="V_String" />
+                <Field name="Design No." size="254" source="File: C:\Users\User\Downloads\BI Project\Sale Report.csv" type="V_String" />
+                <Field name="Stock" size="254" source="File: C:\Users\User\Downloads\BI Project\Sale Report.csv" type="V_String" />
+                <Field name="Category" size="254" source="File: C:\Users\User\Downloads\BI Project\Sale Report.csv" type="V_String" />
+                <Field name="Size" size="254" source="File: C:\Users\User\Downloads\BI Project\Sale Report.csv" type="V_String" />
+                <Field name="Color" size="254" source="File: C:\Users\User\Downloads\BI Project\Sale Report.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="222" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([SKU Code]) AND !IsNull([Stock])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([SKU Code]) AND !IsNull([Stock])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="354" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Design No." selected="True" rename="Design_No" />
+                <SelectField field="Stock" selected="True" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="498" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Stock] &gt; 0 THEN &quot;Yes&quot; ELSE &quot;No&quot; ENDIF" field="In_Stock" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[In_Stock = IF [Stock] > 0 THEN "Yes" ELSE "No" ENDIF
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="65" y="461" width="525" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>International Sale</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>International Sale</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="89" y="522" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>International sale Report.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="index" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+                <Field name="DATE" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+                <Field name="Months" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+                <Field name="CUSTOMER" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+                <Field name="Style" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+                <Field name="SKU" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+                <Field name="Size" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+                <Field name="PCS" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+                <Field name="RATE" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+                <Field name="GROSS AMT" size="254" source="File: C:\Users\User\Downloads\BI Project\International sale Report.csv\International sale Report.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="210" y="522" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([GROSS AMT]) AND !IsNull([DATE])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([GROSS AMT]) AND !IsNull([DATE])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="330" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DATE" selected="True" rename="Date" />
+                <SelectField field="CUSTOMER" selected="True" rename="Customer" />
+                <SelectField field="PCS" selected="True" rename="Quantity_Sold" />
+                <SelectField field="RATE" selected="True" rename="Price_Rate" />
+                <SelectField field="GROSS AMT" selected="True" rename="Gross_Amt" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="474" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Sales_Type] = &quot;International&quot;" field="Sales_Type" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Sales_Type = [Sales_Type] = "International"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ce2f059d-1431-4c56-bd5c-08f8068e5cd7" />
+      <Telemetry>
+        <PreviousWorkflowId value="276064c5-c835-4077-acb2-e70a82efe385" />
+        <OriginWorkflowId value="276064c5-c835-4077-acb2-e70a82efe385" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

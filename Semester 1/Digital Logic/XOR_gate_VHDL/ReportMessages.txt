@@ -1,0 +1,28 @@
+(Info) ************************************************************************
+(Info) Deeds VHDL converter (ver. 2.50.200) is running...
+(Info) Convertion started (10:31:44 PM, 6/11/2023) on file:
+(Info) --> "C:\Users\hp\OneDrive\Documents\Assigment UTM\Digital Logic\XOR gate.pbs"
+(Info) ------------------------------------------------------------------------
+(Info) Converting schematic file "XOR gate.pbs" into VHDL
+(Info) --> Top level VHDL file (renamed to be compliant): "XOR_gate.vhd"
+(Info) Extracting and Coding VHDL components
+(Info) VHDL components coded (file: "Components.vhd", 1556 bytes)
+(Info) Processing Input and Output Signals
+(Warning) Input "A" [Id#2] renamed to "iA"
+(Warning) Input "B" [Id#3] renamed to "iB"
+(Warning) Output "Y" [Id#4] renamed to "oY"
+(Info) 2 Native Input(s), 1 Native Output(s) processed.
+(Info) 0 Added Input(s), 0 Added Output(s), 0 Default Output(s).
+(Info) Top level structural VHDL description coded (file "XOR_gate.vhd", 2018 bytes)
+(Info) ------------------------------------------------------------------------
+(Info) Saving all the VHDL files in the subfolder:
+(Info) --> "C:\Users\hp\OneDrive\Documents\Assigment UTM\Digital Logic\XOR_gate_VHDL"
+(Info)   |--- "Components.vhd" file saved.
+(Info)   |--- "XOR_gate.vhd" file saved.
+(Info) ------------------------------------------------------------------------
+(Info) ------------------------------------------------------------------------
+(Info) This message list saved on file:
+(Info) --> "C:\Users\hp\OneDrive\Documents\Assigment UTM\Digital Logic\XOR_gate_VHDL\ReportMessages.txt"
+(Info) ------------------------------------------------------------------------
+(Info) All files saved! VHDL conversion ended (10:31:44 PM, 6/11/2023)
+(Info) ************************************************************************

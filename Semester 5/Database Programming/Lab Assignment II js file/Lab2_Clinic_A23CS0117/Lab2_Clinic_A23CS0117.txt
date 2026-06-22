@@ -1,0 +1,223 @@
+// Part A - Data Preparation
+// Question A1
+db.createCollection("appointments");
+db.createCollection("loginSessions");
+
+// Question A2
+db.appointments.insertMany([
+  {
+    appointmentId: "A001",
+    patientName: "Muhammad Aiman Hakim",
+    doctor: "Dr. Siti Aisyah",
+    department: "Cardiology",
+    status: "COMPLETED",
+    fee: 180,
+    appointmentDate: ISODate("2025-01-05T09:30:00Z"),
+  },
+  {
+    appointmentId: "A002",
+    patientName: "Nur Ain Sofea",
+    doctor: "Dr. Ahmad Firdaus",
+    department: "Orthopedics",
+    status: "PENDING",
+    fee: 120,
+    appointmentDate: ISODate("2025-01-08T10:00:00Z"),
+  },
+  {
+    appointmentId: "A003",
+    patientName: "Daniel Syafiq",
+    doctor: "Dr. Nur Hidayah",
+    department: "Dermatology",
+    status: "COMPLETED",
+    fee: 90,
+    appointmentDate: ISODate("2025-01-03T08:00:00Z"),
+  },
+  {
+    appointmentId: "A004",
+    patientName: "Aisyah Nabila",
+    doctor: "Dr. Faizal Rahman",
+    department: "Neurology",
+    status: "CANCELLED",
+    fee: 250,
+    appointmentDate: ISODate("2025-01-10T11:00:00Z"),
+  },
+  {
+    appointmentId: "A005",
+    patientName: "Muhammad Izzat",
+    doctor: "Dr. Farah Imani",
+    department: "Orthopedics",
+    status: "COMPLETED",
+    fee: 70,
+    appointmentDate: ISODate("2025-01-02T08:20:00Z"),
+  },
+  {
+    appointmentId: "A006",
+    patientName: "Nur Syahirah",
+    doctor: "Dr. Amir Hakimi",
+    department: "General Medicine",
+    status: "PENDING",
+    fee: 60,
+    appointmentDate: ISODate("2025-01-12T09:00:00Z"),
+  },
+  {
+    appointmentId: "A007",
+    patientName: "Haziq Afiq",
+    doctor: "Dr. Siti Aminah",
+    department: "Neurology",
+    status: "COMPLETED",
+    fee: 125,
+    appointmentDate: ISODate("2025-01-06T07:00:00Z"),
+  },
+  {
+    appointmentId: "A008",
+    patientName: "Nurul Iman",
+    doctor: "Dr. Hafiz Zulkifli",
+    department: "Orthopedics",
+    status: "PENDING",
+    fee: 110,
+    appointmentDate: ISODate("2025-01-15T08:00:00Z"),
+  },
+  {
+    appointmentId: "A009",
+    patientName: "Muhammad Arif",
+    doctor: "Dr. Nadia Karim",
+    department: "Psychiatry",
+    status: "COMPLETED",
+    fee: 200,
+    appointmentDate: ISODate("2025-01-04T08:00:00Z"),
+  },
+  {
+    appointmentId: "A010",
+    patientName: "Siti Nur Aina",
+    doctor: "Dr. Rizal Hamdan",
+    department: "Psychiatry",
+    status: "CANCELLED",
+    fee: 150,
+    appointmentDate: ISODate("2025-01-09T08:00:00Z"),
+  },
+]);
+
+db.loginSessions.insertMany([
+  {
+    staffId: "S001",
+    staffName: "Dr. Siti Aisyah",
+    role: "Doctor",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.10",
+    loginTime: ISODate("2025-01-05T08:10:00Z"),
+  },
+  {
+    staffId: "S002",
+    staffName: "Dr. Ahmad Firdaus",
+    role: "Doctor",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.11",
+    loginTime: ISODate("2025-01-08T09:00:00Z"),
+  },
+  {
+    staffId: "S003",
+    staffName: "Dr. Nur Hidayah",
+    role: "Doctor",
+    status: "INACTIVE",
+    ipAddress: "192.168.1.12",
+    loginTime: ISODate("2025-01-03T14:30:00Z"),
+  },
+  {
+    staffId: "S004",
+    staffName: "Dr. Faizal Rahman",
+    role: "Doctor",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.13",
+    loginTime: ISODate("2025-01-10T10:45:00Z"),
+  },
+  {
+    staffId: "S005",
+    staffName: "Dr. Farah Imani",
+    role: "Doctor",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.13",
+    loginTime: ISODate("2025-01-02T08:20:00Z"),
+  },
+  {
+    staffId: "S006",
+    staffName: "Nur Aisyah",
+    role: "Nurse",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.14",
+    loginTime: ISODate("2025-01-06T07:50:00Z"),
+  },
+  {
+    staffId: "S007",
+    staffName: "Ahmad Zulfikar",
+    role: "Receptionist",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.15",
+    loginTime: ISODate("2025-01-09T08:00:00Z"),
+  },
+  {
+    staffId: "S008",
+    staffName: "Muhammad Haziq",
+    role: "Pharmacist",
+    status: "INACTIVE",
+    ipAddress: "192.168.1.16",
+    loginTime: ISODate("2025-01-04T16:15:00Z"),
+  },
+  {
+    staffId: "S009",
+    staffName: "Ahmad Zulfikar",
+    role: "Receptionist",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.16",
+    loginTime: ISODate("2025-01-12T09:30:00Z"),
+  },
+  {
+    staffId: "S010",
+    staffName: "Amir Hakimi",
+    role: "IT Support",
+    status: "INACTIVE",
+    ipAddress: "192.168.1.17",
+    loginTime: ISODate("2025-01-15T17:00:00Z"),
+  },
+]);
+
+// Part B - Appointments Reporting
+// Question B1 - Advanced Query and Sorting
+db.appointments.find({status : "COMPLETED", fee: {$gte: 100, $lte: 300}}, 
+    {appointmentId: 1, patientName: 1, department: 1, fee: 1}).sort({department: 1, fee: -1})
+
+// Question B2 - Aggregation Summary
+db.appointments.aggregate([
+    {$group: { _id: "$department", totalAppointments: {$sum: 1}, totalFees: {$sum: "$fee"}}},
+    {$sort:  {totalFees: -1}}
+])
+
+// Part C - Clinic Security Monitoring
+// Question C1 - Active Staff Sessions
+db.loginSessions.find({status: "ACTIVE"},
+    {staffName: 1, role: 1, ipAddress: 1, loginTime: 1}).sort({loginTime: -1})
+
+// Question C2 - Distinct and Count
+// a.
+db.loginSessions.distinct("ipAddress", {status: "ACTIVE"})
+
+// b.
+db.loginSessions.aggregate([
+    {$match: {status: "ACTIVE"}},
+    {$group: {_id: "$staffName", count: {$sum: 1}}}
+])
+
+// Part D - Indexing and Data Maintenance
+// Question D1 - Compound Index
+db.appointments.createIndex({department: 1, status: 1})
+
+db.appointments.find({department: "Psychiatry", status: "COMPLETED"})
+
+// Question D2 - Update & Delete Operations
+// a.
+db.appointments.updateMany(
+    {status: "CANCELLED"},
+    {$set: {status: "ARCHIVED"}}
+)
+
+// b.
+db.loginSessions.deleteMany({status: "INACTIVE"})

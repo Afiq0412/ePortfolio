@@ -1,0 +1,16 @@
+Course Registration System:
+
+Database (Min 3NF):
+User(uid (email), staff/student id, password, name, contact, state, date registered)
+Course (ccode, cname, credit hour, lec)
+Registration (transaction id, userid, courseid, semester)
+Status (statusid, approval status)
+UserType (type id, type decs,...)
+
+User: *(student, Lec, IT)
+
+Use case:
+Auth
+Register
+Approval
+View courses

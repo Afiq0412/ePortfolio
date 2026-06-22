@@ -1,0 +1,49 @@
+sales_order_id,order_date,customer_name,finished_product,quantity_ordered,required_delivery_date,status
+SO-001,17/1/2025,BuildRight Hardware,Premium White Paint 4L,618,4/2/2025,Delivered
+SO-002,10/1/2025,Kerjaya Bina Bhd,Premium White Paint 4L,107,5/2/2025,Delivered
+SO-003,19/1/2025,Sime Darby Property,Anti-Rust Coating,743,14/2/2025,Delivered
+SO-004,19/2/2025,Pavilion Retail Supplies,Industrial Grey Primer,131,10/3/2025,Delivered
+SO-005,18/2/2025,Maybank Facilities Mgmt,Anti-Rust Coating,468,20/3/2025,Delivered
+SO-006,5/2/2025,Maybank Facilities Mgmt,Marine Blue Coating,299,6/3/2025,Delivered
+SO-007,15/2/2025,Sime Darby Property,Epoxy Floor Coating,371,15/3/2025,Delivered
+SO-008,5/3/2025,SP Setia Hardware,Premium White Paint 1L,255,25/3/2025,Delivered
+SO-009,19/3/2025,Sime Darby Property,Marine Blue Coating,310,12/4/2025,Delivered
+SO-010,18/3/2025,UEM Sunrise Bhd,Anti-Rust Coating,301,4/4/2025,Delivered
+SO-011,4/3/2025,IJM Corporation,Epoxy Floor Coating,775,29/3/2025,Delivered
+SO-012,15/4/2025,Pavilion Retail Supplies,Anti-Rust Coating,543,7/5/2025,Delivered
+SO-013,19/4/2025,Eco World Supplies,Anti-Rust Coating,585,17/5/2025,Delivered
+SO-014,14/4/2025,Sunway Building Materials,Premium White Paint 4L,131,4/5/2025,Delivered
+SO-015,7/5/2025,UEM Sunrise Bhd,Epoxy Floor Coating,167,3/6/2025,Delivered
+SO-016,13/5/2025,Gamuda Trading,Clear Varnish,784,8/6/2025,Delivered
+SO-017,14/5/2025,Sunway Building Materials,Marine Blue Coating,782,9/6/2025,Delivered
+SO-018,5/6/2025,Eco World Supplies,Premium White Paint 4L,243,21/6/2025,Delivered
+SO-019,11/6/2025,SP Setia Hardware,Premium White Paint 1L,475,2/7/2025,Delivered
+SO-020,9/6/2025,BuildRight Hardware,Protective Roof Paint,756,30/6/2025,Delivered
+SO-021,20/7/2025,BuildRight Hardware,Protective Roof Paint,528,12/8/2025,Delivered
+SO-022,10/7/2025,IJM Corporation,Epoxy Floor Coating,384,8/8/2025,Delivered
+SO-023,7/7/2025,Gamuda Trading,Premium White Paint 1L,459,31/7/2025,Delivered
+SO-024,14/8/2025,SP Setia Hardware,Anti-Rust Coating,494,12/9/2025,Delivered
+SO-025,8/8/2025,Gamuda Trading,Automotive Red Paint,379,29/8/2025,Delivered
+SO-026,3/8/2025,Kerjaya Bina Bhd,Epoxy Floor Coating,132,28/8/2025,Delivered
+SO-027,17/8/2025,Pavilion Retail Supplies,Marine Blue Coating,594,12/9/2025,Delivered
+SO-028,10/8/2025,Metro Paint Supplies,Epoxy Floor Coating,522,2/9/2025,Delivered
+SO-029,11/9/2025,BuildRight Hardware,Marine Blue Coating,678,11/10/2025,Delivered
+SO-030,15/9/2025,Nippon Construction Sdn Bhd,Marine Blue Coating,325,3/10/2025,Delivered
+SO-031,10/9/2025,UEM Sunrise Bhd,Premium White Paint 4L,365,8/10/2025,Delivered
+SO-032,4/10/2025,YTL Hardware Centre,Premium White Paint 4L,697,31/10/2025,Delivered
+SO-033,9/10/2025,Metro Paint Supplies,Wood Stain Brown,486,7/11/2025,Delivered
+SO-034,12/10/2025,Sunway Building Materials,Premium White Paint 4L,233,30/10/2025,Delivered
+SO-035,20/11/2025,Pavilion Retail Supplies,Epoxy Floor Coating,594,11/12/2025,Delivered
+SO-036,1/11/2025,YTL Hardware Centre,Premium White Paint 1L,523,22/11/2025,Delivered
+SO-037,6/11/2025,YTL Hardware Centre,Epoxy Floor Coating,438,27/11/2025,Delivered
+SO-038,8/11/2025,IJM Corporation,Premium White Paint 4L,444,29/11/2025,Delivered
+SO-039,3/12/2025,Kerjaya Bina Bhd,Protective Roof Paint,500,10/1/2026,Open
+SO-040,8/12/2025,Sime Darby Property,Premium White Paint 4L,400,15/1/2026,Open
+SO-041,10/12/2025,Gamuda Trading,Premium White Paint 1L,600,20/1/2026,Open
+SO-042,15/12/2025,SP Setia Hardware,Protective Roof Paint,300,25/1/2026,Open
+SO-043,18/12/2025,Eco World Supplies,Premium White Paint 4L,350,1/2/2026,Open
+SO-044,14/12/2025,Pavilion Retail Supplies,Industrial Grey Primer,364,11/1/2026,Open
+SO-045,27/12/2025,Maybank Facilities Mgmt,Marine Blue Coating,275,24/1/2026,Open
+SO-046,20/12/2025,Top Glove Facilities,Automotive Red Paint,159,17/1/2026,Open
+SO-047,3/12/2025,YTL Hardware Centre,Epoxy Floor Coating,385,31/12/2025,Open
+SO-048,8/12/2025,BuildRight Hardware,Wood Stain Brown,225,5/1/2026,Open
